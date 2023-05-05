@@ -5,7 +5,7 @@ echo "SHIFT+1 must be set as the keyboard shortcut in Zoom: Settings -> Keyboard
 echo Unmuting Zoom...
 echo WScript.CreateObject("WScript.Shell").SendKeys("+1") > %temp%\ShiftPlus1.vbs && cscript //nologo %temp%\ShiftPlus1.vbs && del %temp%\ShiftPlus1.vbs
 
-rem Wait for 1 second
+rem Wait for ~x-1 seconds (can be changed)
 ping -n 1 127.0.0.1 > nul
 
 echo Muting Zoom...

@@ -16,6 +16,6 @@ echo WScript.CreateObject("WScript.Shell").SendKeys("+1") > %temp%\ShiftPlus1.vb
 rem Wait for 1 second
 ping -n 2 127.0.0.1 > nul
 
-rem Wait for 60 seconds before looping
+rem Wait for 10 seconds before looping
 timeout /t 10 > nul
 goto loop

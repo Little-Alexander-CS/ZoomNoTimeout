@@ -6,14 +6,14 @@ set /a x=0
 :loop
 echo Unmuting Zoom... %x%
 rem echo WScript.CreateObject("WScript.Shell").SendKeys("+1") > %temp%\ShiftPlus1.vbs && cscript //nologo %temp%\ShiftPlus1.vbs && del %temp%\ShiftPlus1.vbs
-echo WScript.CreateObject("WScript.Shell").SendKeys("%") > %temp%\ShiftPlus1.vbs && cscript //nologo %temp%\ShiftPlus1.vbs && del %temp%\ShiftPlus1.vbs
+echo WScript.CreateObject("WScript.Shell").SendKeys("%1") > %temp%\ShiftPlus1.vbs && cscript //nologo %temp%\ShiftPlus1.vbs && del %temp%\ShiftPlus1.vbs
 
 rem Wait for ~x-1 seconds (can be changed)
 ping -n 1 127.0.0.1 > nul
 
 echo Muting Zoom... %x%
 rem echo WScript.CreateObject("WScript.Shell").SendKeys("+1") > %temp%\ShiftPlus1.vbs && cscript //nologo %temp%\ShiftPlus1.vbs && del %temp%\ShiftPlus1.vbs
-echo WScript.CreateObject("WScript.Shell").SendKeys("%") > %temp%\ShiftPlus1.vbs && cscript //nologo %temp%\ShiftPlus1.vbs && del %temp%\ShiftPlus1.vbs
+echo WScript.CreateObject("WScript.Shell").SendKeys("%1") > %temp%\ShiftPlus1.vbs && cscript //nologo %temp%\ShiftPlus1.vbs && del %temp%\ShiftPlus1.vbs
 
 rem Wait for 1 second
 ping -n 2 127.0.0.1 > nul

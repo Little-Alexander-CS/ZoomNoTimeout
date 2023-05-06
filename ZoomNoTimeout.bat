@@ -1,5 +1,6 @@
 @echo off
-echo "SHIFT+1 must be set as the keyboard shortcut in Zoom: Settings -> Keyboard shortcuts -> Mute/unmute my audio also tick Enable Global Shortcut"
+echo "SHIFT+1 must be set as the keyboard shortcut in Zoom:" 
+echo "Settings -> Keyboard shortcuts -> Mute/unmute my audio also tick Enable Global Shortcut"
 set /a x=0
 :loop
 echo Unmuting Zoom... %x%

@@ -1,19 +1,17 @@
 @echo off
 title ZoomNoTimeout (Alexander Little)
-echo "SHIFT+1 must be set as the keyboard shortcut in Zoom:" 
+echo "ALT+1 must be set as the keyboard shortcut in Zoom:" 
 echo "Settings -> Keyboard shortcuts -> Mute/unmute my audio also tick Enable Global Shortcut"
 set /a x=0
 :loop
 echo Unmuting Zoom... %x%
-rem echo WScript.CreateObject("WScript.Shell").SendKeys("+1") > %temp%\ShiftPlus1.vbs && cscript //nologo %temp%\ShiftPlus1.vbs && del %temp%\ShiftPlus1.vbs
-echo WScript.CreateObject("WScript.Shell").SendKeys("%1") > %temp%\ShiftPlus1.vbs && cscript //nologo %temp%\ShiftPlus1.vbs && del %temp%\ShiftPlus1.vbs
+echo WScript.CreateObject("WScript.Shell").SendKeys("%%1") > %temp%\AltPlus1.vbs && cscript //nologo %temp%\AltPlus1.vbs && del %temp%\AltPlus1.vbs
 
 rem Wait for ~x-1 seconds (can be changed)
 ping -n 1 127.0.0.1 > nul
 
 echo Muting Zoom... %x%
-rem echo WScript.CreateObject("WScript.Shell").SendKeys("+1") > %temp%\ShiftPlus1.vbs && cscript //nologo %temp%\ShiftPlus1.vbs && del %temp%\ShiftPlus1.vbs
-echo WScript.CreateObject("WScript.Shell").SendKeys("%1") > %temp%\ShiftPlus1.vbs && cscript //nologo %temp%\ShiftPlus1.vbs && del %temp%\ShiftPlus1.vbs
+echo WScript.CreateObject("WScript.Shell").SendKeys("%%1") > %temp%\AltPlus1.vbs && cscript //nologo %temp%\AltPlus1.vbs && del %temp%\AltPlus1.vbs
 
 rem Wait for 1 second
 ping -n 2 127.0.0.1 > nul

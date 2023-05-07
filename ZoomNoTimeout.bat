@@ -4,7 +4,7 @@ echo "ALT+1 must be set as the keyboard shortcut in Zoom:"
 echo "Settings -> Keyboard shortcuts -> Mute/unmute my audio also tick Enable Global Shortcut"
 
 set /a counter=0
-set /a pause=30
+set /a pause=59
 set /a pauseInBetween=1
 
 :loop

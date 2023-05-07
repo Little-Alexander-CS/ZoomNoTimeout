@@ -11,5 +11,5 @@ Set ALT+1 as the keyboard shortcut in Zoom by going to Settings -> Keyboard shor
 Configuration
 The following parameters can be configured by editing the script:
 
-pause: the number of seconds to wait between muting and unmuting the audio (default is 30).
+pause: the number of seconds to wait between each cycle of muting and unmuting the audio (default is 30).
 pauseInBetween: the number of seconds to wait between muting and unmuting the audio (default is 1).
